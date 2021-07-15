@@ -28,6 +28,12 @@ public class EmployeeController {
 		return "Welcome to Spring Boot RESTful Webservice";
 	}
 	
+	// test service
+	@GetMapping("/health")
+	public String healthService() {
+		return "Services health is good";
+	}
+	
 	// Service1: Save data into database
 	@PostMapping("/employee")
 	public String saveEmployee(@RequestBody Employee employee)
