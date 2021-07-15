@@ -36,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService{
 	@Override
 	public String updateEmployee(Employee employee) {
 		employeeRepository.save(employee);              // save() - if id doesnt exit in the database then create it as new record; id is existed - update data
-		return "Updated successfully";
+		return "Updated employee details successfully";
 	}
 
 	@Override
